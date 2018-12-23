@@ -1,62 +1,48 @@
-INSERT INTO projects VALUES (1, 'Buy me a beer.', 'nightlife', 5.00, '2018-10-01', '2018-10-31');
-INSERT INTO projects VALUES (2, 'Buy me a wine.', 'nightlife', 10.00, '2018-10-01', '2018-10-31');
-INSERT INTO projects VALUES (3, 'Buy me a excuisite wine.', 'nightlife', 20.00, '2018-10-01', '2018-10-31');
-INSERT INTO projects VALUES (4, 'Buy me a coffee (no starbucks).', 'work', 2.50, '2018-11-01', '2018-11-30');
-INSERT INTO projects VALUES (5, 'Buy me an espresso.', 'work', 1.00, '2018-11-01', '2018-11-30');
-INSERT INTO projects VALUES (6, 'Buy me a christmas tree.', 'christmas', 50.00, '2018-12-01', '2018-12-24');
-INSERT INTO projects VALUES (7, 'Buy me some stuff for the christmas tree', 'christmas', 20.00, '2018-12-01', '2018-12-24');
-INSERT INTO projects VALUES (8, 'Buy me a pencil.', 'office', 1.50, '2018-12-01', '2018-12-24');
-INSERT INTO projects VALUES (9, 'Buy me a notepad.', 'office', 5.00, '2018-12-01', '2018-12-24');
-INSERT INTO projects VALUES (10, 'Buy me an eraser.', 'office', 0.50, '2018-12-01', '2018-12-24');
+INSERT INTO users (id, name, age) VALUES (1, 'Finnebar', 17), (2, 'Bear', 6), (3, 'Iguana', 4), (4, 'Alex', 33),
+(5, 'Amanda', 24), (6, 'Sophie', 24), (7, 'Rosey', 9), (8, 'Victoria', 23), (9, 'Franz', 100), (10, 'Hermione', 30),
+(11, 'Voldemort', 90), (12, 'Marisa', 24), (13, 'Swizzle', 4), (14, 'Sirius', 36), (15, 'Albus', 113), (16, 'Squid', 5),
+(17, 'Whale', 6), (18, 'Pacha', 5), (19, 'Ena', 24), (20, 'Katie', 24);
 
-INSERT INTO users VALUES (1, 'Hanne', 18);
-INSERT INTO users VALUES (2, 'Anne', 22);
-INSERT INTO users VALUES (3, 'Julia', 23);
-INSERT INTO users VALUES (4, 'Giulia', 24);
-INSERT INTO users VALUES (5, 'Matt', 25);
-INSERT INTO users VALUES (6, 'Matthias', 25);
-INSERT INTO users VALUES (7, 'Thomas', 26);
-INSERT INTO users VALUES (8, 'Melanie', 25);
-INSERT INTO users VALUES (9, 'David', 24);
-INSERT INTO users VALUES (10, 'Peter', 24);
-INSERT INTO users VALUES (11, 'Gertrud', 37);
-INSERT INTO users VALUES (12, 'Andrea', 36);
-INSERT INTO users VALUES (13, 'Tanja', 37);
-INSERT INTO users VALUES (14, 'Simon', 35);
-INSERT INTO users VALUES (15, 'Selina', 47);
-INSERT INTO users VALUES (16, 'Fabienne', 47);
-INSERT INTO users VALUES (17, 'Fabian', 48);
-INSERT INTO users VALUES (18, 'Tom', 59);
-INSERT INTO users VALUES (19, 'Oleg', 56);
-INSERT INTO users VALUES (20, 'Jakob', 63);
+INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES
+(1, 'Help me buy a guitar', 'music', 500.00, '2013-06-30', '2013-07-30'),
+(2, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
+(3, 'The next Harry Potter', 'books', 1000.00, '2013-05-30', '2015-05-30'),
+(4, 'Animal shelter needs dog food', 'charity', 400.00, '2013-03-14', '2013-06-30'),
+(5, 'Voldement needs a body', 'charity', 6000.00, '2013-03-20', '2013-09-20'),
+(6, 'The next Inna-Gadda-Davida', 'music', 200.00, '2014-12-30', '2015-12-30'),
+(7, 'Iguana needs tail operation', 'charity', 2000.00, '2013-10-02', '2013-10-30'),
+(8, 'I have bed bugs!', 'charity', 800.00, '2014-06-30', '2014-06-31'),
+(9, 'I want to teach English in China', 'charity', 3000.00, '2013-06-30', '2013-09-30'),
+(10, 'Help save birds of paradise', 'charity', 5000.00, '2012-03-20', '2013-06-30');
 
-INSERT INTO pledges VALUES (1, 5.00, 1, 1);
-INSERT INTO pledges VALUES (2, 5.00, 1, 2);
-INSERT INTO pledges VALUES (3, 5.00, 2, 3);
-INSERT INTO pledges VALUES (4, 5.00, 2, 4);
-INSERT INTO pledges VALUES (5, 5.00, 3, 5);
-INSERT INTO pledges VALUES (6, 7.50, 3, 6);
-INSERT INTO pledges VALUES (7, 7.50, 4, 7);
-INSERT INTO pledges VALUES (8, 7.50, 4, 8);
-INSERT INTO pledges VALUES (9, 7.50, 5, 9);
-INSERT INTO pledges VALUES (10, 10.00, 5, 10);
-INSERT INTO pledges VALUES (11, 10.00, 6, 1);
-INSERT INTO pledges VALUES (12, 10.00, 6, 2);
-INSERT INTO pledges VALUES (13, 10.00, 7, 3);
-INSERT INTO pledges VALUES (14, 10.00, 7, 4);
-INSERT INTO pledges VALUES (15, 15.00, 8, 5);
-INSERT INTO pledges VALUES (16, 15.00, 8, 6);
-INSERT INTO pledges VALUES (17, 15.00, 9, 7);
-INSERT INTO pledges VALUES (18, 15.00, 9, 8);
-INSERT INTO pledges VALUES (19, 20.00, 10, 9);
-INSERT INTO pledges VALUES (20, 20.00, 11, 10);
-INSERT INTO pledges VALUES (21, 20.00, 12, 1);
-INSERT INTO pledges VALUES (22, 20.00, 13, 2);
-INSERT INTO pledges VALUES (23, 30.00, 14, 3);
-INSERT INTO pledges VALUES (24, 30.00, 15, 4);
-INSERT INTO pledges VALUES (25, 30.00, 16, 5);
-INSERT INTO pledges VALUES (26, 30.00, 17, 6);
-INSERT INTO pledges VALUES (27, 35.00, 18, 7);
-INSERT INTO pledges VALUES (28, 35.00, 19, 8);
-INSERT INTO pledges VALUES (29, 35.00, 20, 9);
-INSERT INTO pledges VALUES (30, 35.00, 20, 10);
+INSERT INTO pledges (id, amount, user_id, project_id) VALUES
+(1, 10.00, 1, 2),
+(2, 20.00, 1, 3),
+(3, 40.00, 1, 4),
+(4, 50.00, 2, 3),
+(5, 10.00, 3, 2),
+(6, 20.00, 4, 4),
+(7, 40.00, 5, 10),
+(8, 60.00, 6, 10),
+(9, 50.00, 7, 9),
+(10, 700.00, 8, 8),
+(11, 1000.00, 8, 7),
+(12, 40.00, 9, 6),
+(13, 50.00, 9, 3),
+(14, 50.00, 10, 4),
+(15, 24.00, 12, 1),
+(16, 34.00, 11, 1),
+(17, 12.00, 13, 6),
+(18, 19.00, 14, 5),
+(19, 20.00, 15, 5),
+(20, 40.00, 16, 6),
+(21, 35.50, 17, 7),
+(22, 40.00, 18, 8),
+(23, 60.00, 19, 9),
+(24, 70.00, 20, 10),
+(25, 100.00, 20, 4),
+(26, 40.00, 19, 1),
+(27, 20.00, 18, 6),
+(28, 90.00, 17, 9),
+(29, 230.00, 16, 6),
+(30, 450.00, 15, 5);
